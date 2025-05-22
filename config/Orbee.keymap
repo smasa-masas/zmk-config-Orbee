@@ -54,9 +54,9 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+                <&left_encoder0 DOWN_ARROW UP_ARROW>,
+                <&left_encoder1 PAGE_DOWN PAGE_UP>,
+                <&right_encoder C_VOL_DN C_VOL_UP>;
         };
 
         layer_1 {
