@@ -54,7 +54,7 @@
         label = "right_encoder";
         a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <2>;
+        steps = <1>;
         status = "disabled";
     };
 
