@@ -52,9 +52,9 @@
     right_encoder: encoder_right {
         compatible = "alps,ec11";
         label = "right_encoder";
-        a-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <4>;
+        a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <2>;
         status = "disabled";
     };
 
