@@ -37,6 +37,7 @@
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <20>;
+        debounce = <5>;
         status = "disabled";
     };
 
@@ -46,6 +47,7 @@
         a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <20>;
+        debounce = <5>;
         status = "disabled";
     };
 
@@ -56,12 +58,13 @@
         a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <20>;
+        debounce = <5>;
         status = "disabled";
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder0 &left_encoder1 &right_encoder>;
-        triggers-per-rotation = <10>;
+        triggers-per-rotation = <15>;
     };
 };
