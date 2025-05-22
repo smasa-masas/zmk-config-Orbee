@@ -42,6 +42,10 @@
         };
     };
 
+&left_encoder0 { resolution = <1>; };
+&left_encoder1 { resolution = <1>; };
+&right_encoder { resolution = <1>; };
+
     keymap {
         compatible = "zmk,keymap";
 
