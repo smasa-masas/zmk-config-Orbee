@@ -42,10 +42,10 @@
     left_encoder1: encoder_left1 {
         compatible = "alps,ec11";
         label = "left_encoder1";
-        a-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <20>;
-        status = "disabled";
+        status = "okay";
     };
 
 
