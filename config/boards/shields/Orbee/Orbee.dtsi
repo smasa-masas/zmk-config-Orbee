@@ -35,7 +35,7 @@
         label = "left_encoder0";
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        steps = <30>;
+        steps = <20>;
         status = "disabled";
     };
 
@@ -44,7 +44,7 @@
         label = "left_encoder1";
         a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <30>;
+        steps = <20>;
         status = "disabled";
     };
 
@@ -54,7 +54,7 @@
         label = "right_encoder";
         a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <30>;
+        steps = <20>;
         status = "disabled";
     };
 
