@@ -33,8 +33,8 @@
     left_encoder0: encoder_left0 {
         compatible = "alps,ec11";
         label = "left_encoder0";
-        a-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        b-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <20>;
         status = "disabled";
     };
@@ -42,9 +42,9 @@
     left_encoder1: encoder_left1 {
         compatible = "alps,ec11";
         label = "left_encoder1";
-        a-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH)>;
-        b-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH)>;
-        steps = <20>;
+        a-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <120>;
         status = "disabled";
     };
 
@@ -61,6 +61,6 @@
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder0 &left_encoder1 &right_encoder>;
-        triggers-per-rotation = <20>;
+        triggers-per-rotation = <30>;
     };
 };
