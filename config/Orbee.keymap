@@ -74,9 +74,7 @@
             >;
 
             sensor-bindings =
-                <&scroll_up_down>,
-                <&inc_dec_kp PG_DN PG_UP>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+                <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         layer_1function {
@@ -87,8 +85,7 @@
 &trans      &trans      &trans      &trans            &trans      &trans    &trans  &trans                          &kp F12
             >;
 
-            sensor-bindings = <&scroll_up_down>;
-        };
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
 
         layer_2number {
             bindings = <
