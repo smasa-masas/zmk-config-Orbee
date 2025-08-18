@@ -8,8 +8,10 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <300>;
 };
+
+&lt { quick-tap-ms = <300>; };
 
 / {
     combos {
@@ -41,6 +43,16 @@
     };
 
     behaviors {
+        right_click: right_click_behavior {
+            compatible = "zmk,behavior-mouse-key";
+            label = "RIGHT_CLICK";
+            #binding-cells = <0>;
+
+            // 右クリックは通常 MB2 に対応（ZMKの標準定義）
+
+            bindings = <&mkp MB2>;
+        };
+
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
