@@ -55,7 +55,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        automouse-layer = <6>;
+        
         scroll-layers = <5>;
 
     };
@@ -65,3 +65,15 @@
     status = "okay";
 };
 
+#include <input/processors.dtsi>
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+
+        cpi-low {
+            layers = <2>;
+            input-processors = <&zip_xy_scaler 1 3>;
+        };
+    };
+};
