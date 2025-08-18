@@ -31,12 +31,12 @@
         };
 
         LEFTCLICK {
-            bindings = <&mkp MB1>;
+            bindings = <&mkp LCLK>;
             key-positions = <18 19>;
         };
 
         RIGHTCLICK {
-            bindings = <&mkp MB2>;
+            bindings = <&mkp RCLK>;
             key-positions = <19 20>;
         };
     };
