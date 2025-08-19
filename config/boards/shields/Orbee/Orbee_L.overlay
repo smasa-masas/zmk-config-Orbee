@@ -12,9 +12,9 @@
 };
 
 &left_encoder0 {
-    status = "okay";
+    status = "disabled";
 };
 
 &left_encoder1 {
-    status = "okay";
+    status = "disabled";
 };
