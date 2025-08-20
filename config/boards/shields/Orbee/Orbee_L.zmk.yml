@@ -1,0 +1,8 @@
+file_format: "1"
+id: orbee_left
+name: Orbee Left
+type: shield
+url: "https://github.com/smasa-masas/zmk-config-Orbee"
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
