@@ -77,3 +77,16 @@
         };
     };
 };
+
+#include "Orbee-layouts.dtsi"
+
+&orbee_r_layout {
+    transform = <&default_transform>;  // ←既存のmatrix_transformのラベル名に置換
+    // kscan = <&kscan0>;               // 必要なら追加
+};
+
+ / {
+    chosen {
+        zmk,physical-layout = &orbee_r_layout;
+    };
+};
